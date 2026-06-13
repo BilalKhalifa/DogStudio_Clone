@@ -9,6 +9,7 @@ const Dog = () => {
 
     return (
         <>
+            <primitive object={scene}/>
             <OrbitControls />
         </>
     )
