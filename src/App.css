@@ -1,3 +1,9 @@
+@font-face {
+  font-family: HeeboRegular;
+  src: url('/fonts/Heebo-Regular.woff2');
+  font-weight: 400;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +13,7 @@
 html,body,#root {
   width: 100%;
   background-color: #16171c;
+  color: whitesmoke;
 }
 
 main{
@@ -14,10 +21,50 @@ main{
 }
 
 
-
 section{
   min-height: 100vh;
   border: 2px solid white;
   position: relative;
   z-index: 2;
+}
+
+#section1 {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 3rem ;
+    
+    svg{
+      fill: white;
+      height: 30px;
+    }
+    .nav-elem{
+      max-width: 10rem;
+      font-family: 'HeeboRegular';
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    .nav-elem:nth-child(2){
+      i{
+        color: #fd4a41;
+        width: 0.125rem;
+        font-weight: bold;
+        font-size: 15px;
+        margin-right: 15px;
+        transition: all ease-in 150ms;
+      }
+      &:hover i{
+        margin-right: 5px;
+      }
+    }
+
+    .nav-elem:nth-child(3){
+      i{
+        font-size: 20px;
+      }
+    }
+
+  }
 }
