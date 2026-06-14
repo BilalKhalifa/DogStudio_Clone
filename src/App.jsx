@@ -50,6 +50,12 @@ const App = () => {
               <i className="ri-menu-3-line"></i>
             </div>
           </nav>
+          <div className="middle">
+            <div className="left">
+              <h1>We<br />Make<br />Good<br />Shit</h1>
+            </div>
+            <div className="right"></div>
+          </div>
         </section>
         <section id= 'section2'></section>
         <section id= 'section3'></section>
