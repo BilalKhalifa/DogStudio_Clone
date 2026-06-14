@@ -5,7 +5,19 @@
 }
 
 html,body,#root {
-  height: 100%;
   width: 100%;
-  background-color: black;
+  background-color: #16171c;
+}
+
+main{
+  position: relative;
+}
+
+
+
+section{
+  min-height: 100vh;
+  border: 2px solid white;
+  position: relative;
+  z-index: 2;
 }
