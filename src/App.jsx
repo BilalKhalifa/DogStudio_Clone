@@ -8,16 +8,28 @@ const App = () => {
   return (
     <>
       <main>
-        <Canvas style={{
+
+      <div className="images">
+        <img id='Tommorowland' src='/bgimags/tommorowland.png' alt='Tommorowland'/>
+        <img id='navy-pier' src='/bgimags/navy-pier.png' alt='navy-pier'/>
+        <img id='msi' src='/bgimags/msi-chicago.png' alt='msi'/>
+        <img id='phone' src='/bgimags/phone.png' alt='phone'/>
+        <img id='kikk' src='/bgimags/kikk.png' alt='kikk'/>
+        <img id='kennedy' src='/bgimags/kennedy.png' alt='kennedy'/>
+        <img id='opera' src='/bgimags/opera.png' alt='opera'/>
+      </div>
+
+        <Canvas 
+        
+        id='canvas-elem'
+        
+        style={{
           height: '100vh',
           width: '100vw',
           position: 'fixed',
           top: 0,
           left: 0,
           zIndex: 1,
-          backgroundImage: "url(/background-xl.png)",
-          backgroundRepeat: 'no-repeat',
-          backgroundSize: 'cover'
         }}>
           <Dog />
         </Canvas>
@@ -75,7 +87,39 @@ const App = () => {
           <div className="first-line"></div>
           <div className="second-line"></div>
         </section>
-        <section id= 'section2'></section>
+        <section id= 'section2'>
+          <h4>Featured projects</h4>
+          <div className="projects">
+            <div img-title='Tommorowland' className="title">
+              <small>2020 - ONGOING</small>
+              <h1>Tommorowland</h1>
+            </div>
+            <div img-title='navy-pier' className="title">
+              <small>2018 - TODAY</small>
+              <h1>Navy Pier</h1>
+            </div>
+            <div img-title='msi' className="title">
+              <small>2015 - TODAY</small>
+              <h1>MSI Chicago</h1>
+            </div>
+            <div img-title='phone' className="title">
+              <small>2016</small>
+              <h1>This Was Louise's Phone</h1>
+            </div>
+            <div img-title='kikk' className="title">
+              <small>2012 - TODAY</small>
+              <h1>KIKK Festival 2018</h1>
+            </div>
+            <div img-title='kennedy' className="title">
+              <small>2017</small>
+              <h1>The Kennedy Center</h1>
+            </div>
+            <div img-title='opera' className="title">
+              <small>2016 - ONGOING</small>
+              <h1>Royal Opera Of  Wallonia</h1>
+            </div>
+          </div>
+        </section>
         <section id= 'section3'></section>
       </main>
     </>

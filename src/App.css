@@ -1,4 +1,8 @@
 @font-face {
+  font-family: Heebo;
+  src: url('/fonts/Heebo-VariableFont_wght.ttf');
+}
+@font-face {
   font-family: HeeboRegular;
   src: url('/fonts/Heebo-Regular.woff2');
 }
@@ -6,6 +10,16 @@
 @font-face {
   font-family: HeroText;
   src: url('/fonts/GTSectraDisplay-Bold.woff2');
+}
+
+@font-face {
+  font-family: GTSectraRegular;
+  src: url('/fonts/GTSectraDisplay-Regular.woff2');
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url('/fonts/Gilroy-Medium.woff2');
 }
 
 * {
@@ -29,6 +43,20 @@ section{
   min-height: 100vh;
   position: relative;
   z-index: 2;
+}
+
+#canvas-elem::after{
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-image: url(/background-xl.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.3s linear;
 }
 
 #section1 {
@@ -143,4 +171,117 @@ section{
     top: 20%;
     right: 20%;
   }
+}
+
+#section2{
+  display: flex;
+  flex-direction: column;
+  padding-inline: 150px; 
+  padding-block: 10rem;
+
+  h4{
+    font-family: 'GTSectraRegular';
+    font-size: 0.5rem;
+    color: white;
+    margin-left: 350px;
+    opacity: 30%;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+
+  .projects{
+
+    .title{
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      align-items: center;
+      margin: 50px;
+      gap: 6rem;
+
+      small{
+        font-family: 'Gilroy';
+        font-size: 0.6rem;
+        color: white;
+        margin-left: 50px;
+        opacity: 30%;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        text-align: right;
+      }
+
+      h1{
+        font-family: 'Heebo', sans-serif;
+        font-weight: 100;
+        font-size: 5rem;
+        opacity: 30%;
+        cursor: pointer;
+        text-align: left;
+      }
+
+      &:hover{
+        small,h1{
+          opacity: 100%;
+          transition: 0.3s linear;
+        }
+      }
+    }
+  }
+}
+
+main:has(#section2 .title:hover) #canvas-elem::after{
+  opacity: 0;
+}
+
+.images{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.3s linear;
+  }
+}
+
+main:has(#section2 .title[img-title = 'Tommorowland']:hover)  #Tommorowland{
+  opacity: 1;
+  background-color: #03102b;
+}
+
+main:has(#section2 .title[img-title = 'navy-pier']:hover)  #navy-pier{
+  opacity: 1;
+  background-color: #050a2a;
+}
+
+main:has(#section2 .title[img-title = 'msi']:hover)  #msi{
+  opacity: 1;
+  background-color: #051533;
+}
+
+main:has(#section2 .title[img-title = 'phone']:hover)  #phone{
+  opacity: 1;
+  background-color: #0a182c;
+}
+
+main:has(#section2 .title[img-title = 'kikk']:hover)  #kikk{
+  opacity: 1;
+  background-color: #051985;
+}
+
+main:has(#section2 .title[img-title = 'kennedy']:hover)  #kennedy{
+  opacity: 1;
+  background-color: #0e2936;
+}
+
+main:has(#section2 .title[img-title = 'opera']:hover)  #opera{
+  opacity: 1;
+  background-color: #680202;
 }
