@@ -1,7 +1,6 @@
 @font-face {
   font-family: HeeboRegular;
   src: url('/fonts/Heebo-Regular.woff2');
-  font-weight: 400;
 }
 
 @font-face {
@@ -28,12 +27,14 @@ main{
 
 section{
   min-height: 100vh;
-  border: 0.125rem solid white;
   position: relative;
   z-index: 2;
 }
 
 #section1 {
+  
+  position: relative;
+  
   nav {
     display: flex;
     align-items: center;
@@ -96,5 +97,50 @@ section{
         color: whitesmoke;
       }
     }
+  }
+
+  .bottom{
+
+    display: flex;
+    gap:3rem;
+
+    .left, .right{
+      width: 50%;
+    }
+
+    .right{
+      .first{
+        font-family: 'HeeboRegular';
+        font-size: 1.6rem;
+        font-weight: lighter;
+        line-height: 2rem;
+      }
+
+      .second{
+        margin-top: 1rem ;
+        font-family: 'HeeboRegular';
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+        color: rgba(160, 168, 220, .7);
+      }
+    }
+  }
+
+  .first-line{
+    width: 45rem;
+    height: 0.0625rem;
+    background-color: #b12f36;
+    position: absolute;
+    transform: rotate(45deg) translate(0,-25rem);
+  }
+
+  .second-line{
+    width: 10rem;
+    height: 0.0625rem;
+    background-color: #b12f36;
+    position: absolute;
+    transform: rotate(-45deg);
+    top: 20%;
+    right: 20%;
   }
 }

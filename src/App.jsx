@@ -56,6 +56,24 @@ const App = () => {
             </div>
             <div className="right"></div>
           </div>
+          <div className="bottom">
+            <div className="left"></div>
+            <div className="right">
+              <p className='first'>Dogstudio is a multidisciplinary <br />
+                creative studio at the intersection <br />
+                of art, design and technology.
+              </p>
+
+              <p className='second'>
+                Our goal is to deliver amazing experiences that make <br />
+                people talk, and build strategic value for brands, tech, <br />
+                entertainment, arts & culture.
+              </p>
+            </div>
+          </div>
+
+          <div className="first-line"></div>
+          <div className="second-line"></div>
         </section>
         <section id= 'section2'></section>
         <section id= 'section3'></section>
