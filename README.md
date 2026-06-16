@@ -1,6 +1,6 @@
 # 🐕 DogStudio Clone — Interactive 3D Experience
 
-An immersive, responsive, and visually stunning web experience built with **React**, **Three.js (React Three Fiber)**, and **GSAP**. This project is a tribute clone of the famous DogStudio website, featuring a dynamic 3D dog model that animates, rotates, and shifts colors seamlessly as you scroll down the page.
+An immersive, and visually stunning web experience built with **React**, **Three.js (React Three Fiber)**, and **GSAP**. This project is a tribute clone of the famous DogStudio website, featuring a dynamic 3D dog model that animates, rotates, and shifts colors seamlessly as you scroll down the page.
 
 ---
 
