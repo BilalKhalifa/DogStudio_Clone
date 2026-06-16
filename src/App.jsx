@@ -120,7 +120,44 @@ const App = () => {
             </div>
           </div>
         </section>
-        <section id= 'section3'></section>
+        <section id= 'section3'>
+            <div className="left">
+              <h5>THIS IS HOW WE DO IT</h5>
+              <p>
+                We're crafting<br />
+                emotional<br />
+                experiences aimed<br />
+                at improving<br />
+                results<br />
+              </p>
+            </div>
+            <div className="right">
+              <div className="info">
+                <p>Dogstudio is a design &<br />
+                technology firm working globally<br />
+                from our offices based in<br />
+                Belgium and Chicago.<br />
+                Our strong focus on producing<br />
+                high quality & emotional<br />
+                brandings, digital products and<br />
+                experiences became a signature.
+                </p>
+                <p>
+                  We’re passionate about moving<br />
+                  people and solving problems for<br />
+                  the likes of Microsoft, The<br />
+                  Museum of Science And Industry<br />
+                  Of Chicago, The Kennedy Center<br />
+                  of Washington, Dragone, Quanta<br />
+                  Magazine, and many more.
+                </p>
+              </div>
+              <div className="link">
+                <a href=''>Discover our Values</a>
+                <span></span>
+              </div>
+            </div>
+        </section>
       </main>
     </>
   )

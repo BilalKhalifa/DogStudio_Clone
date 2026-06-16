@@ -144,6 +144,7 @@ const Dog = () => {
     }
 
     dogMaterial.onBeforeCompile = onBeforeCompile
+    branchesMaterial.onBeforeCompile = onBeforeCompile
 
     model.scene.traverse((child)=>{
         if(child.name.includes("DOG")){
@@ -165,7 +166,7 @@ const Dog = () => {
                 endTrigger: '#section3',
                 start: 'top top',
                 end: 'bottom bottom',
-                markers: true,
+                // markers: true,
                 scrub: true
             }
         })
